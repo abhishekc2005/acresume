@@ -11,7 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Times New Roman', Times, serif;
             line-height: 1.25;
@@ -21,19 +21,19 @@
             padding: 20px 35px;
             background: #fff;
         }
-        
+
         header {
             border-bottom: 2px solid #000;
             padding-bottom: 5px;
             margin-bottom: 10px;
         }
-        
+
         h1 {
             font-size: 26px;
             font-weight: bold;
             margin-bottom: 3px;
         }
-        
+
         .contact-info {
             display: flex;
             justify-content: space-between;
@@ -42,34 +42,34 @@
             flex-wrap: wrap;
             gap: 4px;
         }
-        
+
         .contact-left, .contact-right {
             display: flex;
             flex-direction: column;
             gap: 1px;
         }
-        
+
         .contact-item {
             display: flex;
             align-items: center;
             gap: 4px;
         }
-        
+
         .contact-item i {
             width: 13px;
             color: #333;
             font-size: 9px;
         }
-        
+
         a {
             color: #0066cc;
             text-decoration: none;
         }
-        
+
         a:hover {
             text-decoration: underline;
         }
-        
+
         h2 {
             font-size: 12px;
             font-weight: bold;
@@ -80,98 +80,98 @@
             border-bottom: 1px solid #000;
             padding-bottom: 2px;
         }
-        
+
         .section-item {
             margin-bottom: 8px;
         }
-        
+
         .job-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             margin-bottom: 1px;
         }
-        
+
         .job-title {
             font-weight: bold;
             font-size: 10.5px;
         }
-        
+
         .job-location {
             font-size: 9.5px;
             font-style: italic;
         }
-        
+
         .job-role {
             font-style: italic;
             font-size: 9.5px;
             margin-bottom: 2px;
         }
-        
+
         .job-period {
             font-size: 9.5px;
             text-align: right;
         }
-        
+
         ul {
             margin-left: 16px;
             font-size: 9.5px;
             margin-top: 1px;
         }
-        
+
         ul li {
             margin-bottom: 0.5px;
             line-height: 1.25;
         }
-        
+
         .skills-list {
             font-size: 9.5px;
             line-height: 1.3;
         }
-        
+
         .skills-list p {
             margin-bottom: 1px;
         }
-        
+
         strong {
             font-weight: bold;
         }
-        
+
         .project-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             margin-bottom: 1px;
         }
-        
+
         .project-title {
             font-weight: bold;
             font-size: 10.5px;
         }
-        
+
         .project-links {
             display: flex;
             gap: 8px;
             font-size: 9.5px;
             font-style: italic;
         }
-        
+
         .tech-stack {
             font-style: italic;
             font-size: 9.5px;
             margin-bottom: 1px;
         }
-        
+
         @media print {
             body {
                 padding: 15px 25px;
             }
-            
+
             h2 {
                 margin-top: 8px;
                 margin-bottom: 4px;
             }
-            
+
             .section-item {
                 margin-bottom: 6px;
             }
@@ -233,10 +233,11 @@
         <h2>Technical Skills</h2>
         <div class="skills-list">
             <p><strong>Languages:</strong> Java, JavaScript, TypeScript, HTML, CSS</p>
-            <p><strong>Frameworks & Libraries:</strong> React.js, Node.js, Express.js, Next.js, Tailwind CSS</p>
+            <p><strong>Frameworks & Libraries:</strong> React.js, Node.js, Express.js, Next.js, Tailwind CSS, Bootstrap, PrismJS</p>
             <p><strong>Databases:</strong> MySQL, MongoDB</p>
             <p><strong>Tools & IDEs:</strong> VSCode, IntelliJ IDEA, GIT, GitHub, Postman, Vite</p>
-            <p><strong>Cloud & Platforms:</strong> AWS (EC2, S3), Vercel, MongoDB Atlas</p>
+            <p><strong>Cloud & Platforms:</strong> AWS (EC2, S3), Vercel, Render, MongoDB Atlas, EmailJS</p>
+            <p><strong>AI & APIs:</strong> Groq API (LLaMA models)</p>
         </div>
     </section>
 
@@ -244,7 +245,7 @@
         <h2>Work Experience</h2>
         <div class="section-item">
             <div class="job-header">
-                <div class="job-title">IT Services Organisation</div>
+                <div class="job-title">Codsoft</div>
                 <div class="job-location">Remote</div>
             </div>
             <div class="job-role">Full Stack Development Intern</div>
@@ -258,7 +259,26 @@
 
     <section>
         <h2>Projects</h2>
-        
+
+        <!-- 1. CodeReviewAI -->
+        <div class="section-item">
+            <div class="project-header">
+                <div class="project-title">CodeReviewAI - AI-Powered Code Review Tool</div>
+                <div class="project-links">
+                    <a href="https://codereviewai-woad.vercel.app" target="_blank">Live Demo</a>
+                    <span>|</span>
+                    <a href="https://github.com/abhishekc2005/CodeReviewAI" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="tech-stack">React.js, Node.js, Express.js, Groq API (LLaMA), PrismJS, React Markdown, Vercel, Render</div>
+            <ul>
+                <li>Built an AI-powered full-stack code review tool that analyzes pasted code and delivers structured feedback covering code quality, potential bugs, performance improvements, security considerations, and best practices.</li>
+                <li>Integrated Groq API with LLaMA models on the Node.js/Express backend to simulate professional engineer-level code reviews with instant AI-generated responses.</li>
+                <li>Developed a responsive React frontend with PrismJS for syntax highlighting and React Markdown for formatted output; deployed frontend on Vercel and backend on Render.</li>
+            </ul>
+        </div>
+
+        <!-- 2. FundCup -->
         <div class="section-item">
             <div class="project-header">
                 <div class="project-title">FundCup - Crowdfunding Platform</div>
@@ -276,39 +296,7 @@
             </ul>
         </div>
 
-        <div class="section-item">
-            <div class="project-header">
-                <div class="project-title">Bittree - Linktree-Style Platform</div>
-                <div class="project-links">
-                    <a href="http://bittreeapp.vercel.app/" target="_blank">Live Demo</a>
-                    <span>|</span>
-                    <a href="https://github.com/abhishekc2005/bittree" target="_blank">GitHub</a>
-                </div>
-            </div>
-            <div class="tech-stack">Next.js, Node.js, Tailwind CSS, MongoDB, Vercel</div>
-            <ul>
-                <li>Built a full-stack Linktree-style platform to consolidate social media links using Next.js.</li>
-                <li>Designed responsive, modern UI with Tailwind CSS and enabled unique user handles with dynamic routing.</li>
-                <li>Implemented profile customization including profile image upload and bio management.</li>
-            </ul>
-        </div>
-
-        <div class="section-item">
-            <div class="project-header">
-                <div class="project-title">Bitlinks - URL Shortener</div>
-                <div class="project-links">
-                    <a href="http://bitlinks-ivory-pi.vercel.app/" target="_blank">Live Demo</a>
-                    <span>|</span>
-                    <a href="https://github.com/abhishekc2005/bitlinks" target="_blank">GitHub</a>
-                </div>
-            </div>
-            <div class="tech-stack">Next.js, Node.js, Tailwind CSS, MongoDB, Vercel</div>
-            <ul>
-                <li>Built a privacy-focused URL shortener enabling instant link generation without user tracking.</li>
-                <li>Developed fast, minimal UI using Next.js and Tailwind CSS with MongoDB Atlas for persistence.</li>
-            </ul>
-        </div>
-
+        <!-- 3. PassOp -->
         <div class="section-item">
             <div class="project-header">
                 <div class="project-title">PassOp - Password Manager</div>
@@ -325,6 +313,43 @@
                 <li>Designed RESTful APIs using Express.js and integrated MongoDB Atlas for persistent data storage.</li>
             </ul>
         </div>
+
+        <!-- 4. Personal Portfolio Website -->
+        <div class="section-item">
+            <div class="project-header">
+                <div class="project-title">Personal Portfolio Website</div>
+                <div class="project-links">
+                    <a href="https://acdevportfolio.vercel.app" target="_blank">Live Demo</a>
+                    <span>|</span>
+                    <a href="https://github.com/abhishekc2005/acdevportfolio" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="tech-stack">React.js, Bootstrap, React-PDF, Vercel</div>
+            <ul>
+                <li>Designed and developed a fully responsive personal portfolio to showcase projects, resume, certifications, and GitHub contributions with a clean, scalable React component architecture.</li>
+                <li>Integrated a live GitHub Contribution Calendar and resume rendering via React-PDF for an interactive, professional presentation.</li>
+                <li>Deployed on Vercel with quick access to social links, contact information, and all major project showcases.</li>
+            </ul>
+        </div>
+
+        <!-- 5. Avika Trading Company -->
+        <div class="section-item">
+            <div class="project-header">
+                <div class="project-title">Avika Trading Company - Business Website</div>
+                <div class="project-links">
+                    <a href="https://avikatradingcompany.vercel.app" target="_blank">Live Demo</a>
+                    <span>|</span>
+                    <a href="https://github.com/abhishekc2005/Avika-Trading-Company" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="tech-stack">React.js, TypeScript, Vite, Tailwind CSS, shadcn-ui, EmailJS, Vercel</div>
+            <ul>
+                <li>Built a professional, fully responsive business website for a premium natural honey brand, featuring a modern UI with Tailwind CSS and shadcn-ui components tailored for real-world client delivery.</li>
+                <li>Integrated EmailJS to implement a fully functional contact and bulk-order inquiry system, enabling direct customer communication without a backend server.</li>
+                <li>Developed using React with TypeScript and Vite for a type-safe, performant codebase; strengthened freelance client project and production deployment experience.</li>
+            </ul>
+        </div>
+
     </section>
 
     <section>
@@ -333,5 +358,6 @@
             <p><strong>Certification:</strong> Scored 92% in NPTEL "Programming in Java" Course, Nov. 2025.</p>
         </div>
     </section>
+
 </body>
 </html>
