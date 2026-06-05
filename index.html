@@ -1,89 +1,357 @@
-<section>
-    <h2>Projects</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Choudhary - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.25;
+            color: #000;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 35px;
+            background: #fff;
+        }
 
-    <!-- 1. ItzoFood -->
-    <div class="section-item">
-        <div class="project-header">
-            <div class="project-title">ItzoFood – Food Ordering & Management Platform</div>
-        </div>
-        <div class="tech-stack">React.js, Node.js, Express.js, MongoDB, AWS ECS</div>
-        <ul>
-            <li>Developed and maintained a full-stack food ordering platform using React.js, Node.js, Express.js, MongoDB, and AWS ECS.</li>
-            <li>Implemented responsive UI components, admin panel features, media upload management, and REST APIs.</li>
-            <li>Optimized application performance, resolved production issues, and enhanced user experience through scalable backend solutions.</li>
-        </ul>
-    </div>
+        header {
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
 
-    <!-- 2. CodeReviewAI -->
-    <div class="section-item">
-        <div class="project-header">
-            <div class="project-title">CodeReviewAI - AI-Powered Code Review Tool</div>
-            <div class="project-links">
-                <a href="https://codereviewai-woad.vercel.app" target="_blank">Live Demo</a>
-                <span>|</span>
-                <a href="https://github.com/abhishekc2005/CodeReviewAI" target="_blank">GitHub</a>
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 9.5px;
+            margin-top: 3px;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .contact-left, .contact-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .contact-item i {
+            width: 13px;
+            color: #333;
+            font-size: 9px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 2px;
+        }
+
+        .section-item {
+            margin-bottom: 8px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 10.5px;
+        }
+
+        .job-location {
+            font-size: 9.5px;
+            font-style: italic;
+        }
+
+        .job-role {
+            font-style: italic;
+            font-size: 9.5px;
+            margin-bottom: 2px;
+        }
+
+        .job-period {
+            font-size: 9.5px;
+            text-align: right;
+        }
+
+        ul {
+            margin-left: 16px;
+            font-size: 9.5px;
+            margin-top: 1px;
+        }
+
+        ul li {
+            margin-bottom: 0.5px;
+            line-height: 1.25;
+        }
+
+        .skills-list {
+            font-size: 9.5px;
+            line-height: 1.3;
+        }
+
+        .skills-list p {
+            margin-bottom: 1px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            font-size: 10.5px;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 8px;
+            font-size: 9.5px;
+            font-style: italic;
+        }
+
+        .tech-stack {
+            font-style: italic;
+            font-size: 9.5px;
+            margin-bottom: 1px;
+        }
+
+        @media print {
+            body {
+                padding: 15px 25px;
+            }
+
+            h2 {
+                margin-top: 8px;
+                margin-bottom: 4px;
+            }
+
+            .section-item {
+                margin-bottom: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Abhishek Choudhary</h1>
+        <div class="contact-info">
+            <div class="contact-left">
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span><a href="https://www.linkedin.com/in/abhishek-choudhary-186a1a303" target="_blank">LinkedIn</a>: linkedin.com/in/abhishek-choudhary-186a1a303</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span><a href="https://github.com/abhishekc2005" target="_blank">Github</a>: github.com/abhishekc2005</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-twitter"></i>
+                    <span><a href="https://x.com/abhishekc_108?t=wpS1Z9fe771OL6gZskcd8g&s=09" target="_blank">Twitter</a>: x.com/abhishekc_108</span>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <span><a href="https://acdevportfolio.vercel.app" target="_blank">Portfolio</a>: acdevportfolio.vercel.app</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span><a href="mailto:abhishekchoudharyorg@gmail.com">Email</a>: abhishekchoudharyorg@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>Mobile: +91-8770552411</span>
+                </div>
             </div>
         </div>
-        <div class="tech-stack">React.js, Node.js, Express.js, Groq API (LLaMA), PrismJS, React Markdown, Vercel, Render</div>
-        <ul>
-            <li>Built an AI-powered full-stack code review tool that analyzes pasted code and delivers structured feedback covering code quality, potential bugs, performance improvements, security considerations, and best practices.</li>
-            <li>Integrated Groq API with LLaMA models on the Node.js/Express backend to simulate professional engineer-level code reviews with instant AI-generated responses.</li>
-            <li>Developed a responsive React frontend with PrismJS for syntax highlighting and React Markdown for formatted output; deployed frontend on Vercel and backend on Render.</li>
-        </ul>
-    </div>
+    </header>
 
-    <!-- 3. FundCup -->
-    <div class="section-item">
-        <div class="project-header">
-            <div class="project-title">FundCup - Crowdfunding Platform</div>
-            <div class="project-links">
-                <a href="http://fundcup.vercel.app/" target="_blank">Live Demo</a>
-                <span>|</span>
-                <a href="https://github.com/abhishekc2005/FundCup" target="_blank">GitHub</a>
+    <section>
+        <h2>Education</h2>
+        <div class="section-item">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">IES IPS Academy Indore (Affiliated to RGPV Bhopal)</div>
+                    <div class="job-role">Bachelor of Technology - CSE (AI-ML)</div>
+                </div>
+                <div>
+                    <div class="job-location">Indore, India</div>
+                    <div class="job-period">Sept. 2023 - May 2027</div>
+                </div>
             </div>
         </div>
-        <div class="tech-stack">Next.js, NextAuth, Node.js, Tailwind CSS, MongoDB, Vercel</div>
-        <ul>
-            <li>Developed a functional crowdfunding platform for creators using Next.js with NextAuth GitHub OAuth authentication.</li>
-            <li>Built a personalized creator dashboard to showcase profiles and manage fundings with seamless responsive design.</li>
-            <li>Integrated MongoDB for secure data storage and Razorpay for payment processing.</li>
-        </ul>
-    </div>
+    </section>
 
-    <!-- 4. PassOp -->
-    <div class="section-item">
-        <div class="project-header">
-            <div class="project-title">PassOp - Password Manager</div>
-            <div class="project-links">
-                <a href="http://pass-op-client.vercel.app/" target="_blank">Live Demo</a>
-                <span>|</span>
-                <a href="https://github.com/abhishekc2005/PassOp-Client" target="_blank">GitHub</a>
-            </div>
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+            <p><strong>Languages:</strong> Java, JavaScript, TypeScript, HTML, CSS</p>
+            <p><strong>Frameworks & Libraries:</strong> React.js, Node.js, Express.js, Next.js, Tailwind CSS, Bootstrap, PrismJS</p>
+            <p><strong>Databases:</strong> MySQL, MongoDB</p>
+            <p><strong>Tools & IDEs:</strong> VSCode, IntelliJ IDEA, GIT, GitHub, Postman, Vite</p>
+            <p><strong>Cloud & Platforms:</strong> AWS (EC2, S3, ECS), Vercel, Render, MongoDB Atlas, EmailJS</p>
+            <p><strong>AI & APIs:</strong> Groq API (LLaMA models)</p>
         </div>
-        <div class="tech-stack">React.js, Express.js, Node.js, Tailwind CSS, MongoDB, Vercel</div>
-        <ul>
-            <li>Developed a full-stack MERN password manager enabling users to securely store, edit, delete and copy credentials.</li>
-            <li>Built responsive frontend using React (Vite) and Tailwind CSS with real-time feedback via React Toastify.</li>
-            <li>Designed RESTful APIs using Express.js and integrated MongoDB Atlas for persistent data storage.</li>
-        </ul>
-    </div>
+    </section>
 
-    <!-- 5. Avika Trading Company -->
-    <div class="section-item">
-        <div class="project-header">
-            <div class="project-title">Avika Trading Company - Business Website</div>
-            <div class="project-links">
-                <a href="https://avikatradingcompany.vercel.app" target="_blank">Live Demo</a>
-                <span>|</span>
-                <a href="https://github.com/abhishekc2005/Avika-Trading-Company" target="_blank">GitHub</a>
+    <section>
+        <h2>Work Experience</h2>
+        <div class="section-item">
+            <div class="job-header">
+                <div class="job-title">Appzeto</div>
+                <div class="job-location">Remote</div>
             </div>
+            <div class="job-role">Full Stack Development Intern</div>
+            <ul>
+                <li>Learned and implemented full stack development in MERN Stack and Next.js.</li>
+                <li>Developed and contributed to multiple projects with focus on scalability and performance.</li>
+                <li>Collaborated on deployment using modern full stack technologies.</li>
+            </ul>
         </div>
-        <div class="tech-stack">React.js, TypeScript, Vite, Tailwind CSS, shadcn-ui, EmailJS, Vercel</div>
-        <ul>
-            <li>Built a professional, fully responsive business website for a premium natural honey brand, featuring a modern UI with Tailwind CSS and shadcn-ui components tailored for real-world client delivery.</li>
-            <li>Integrated EmailJS to implement a fully functional contact and bulk-order inquiry system, enabling direct customer communication without a backend server.</li>
-            <li>Developed using React with TypeScript and Vite for a type-safe, performant codebase; strengthened freelance client project and production deployment experience.</li>
-        </ul>
-    </div>
+    </section>
 
-</section>
+    <section>
+        <h2>Projects</h2>
+
+        <!-- 1. ItzoFood -->
+        <div class="section-item">
+            <div class="project-header">
+                <div class="project-title">ItzoFood – Food Ordering &amp; Management Platform</div>
+            </div>
+            <div class="tech-stack">React.js, Node.js, Express.js, MongoDB, AWS ECS</div>
+            <ul>
+                <li>Developed and maintained a full-stack food ordering platform using React.js, Node.js, Express.js, MongoDB, and AWS ECS.</li>
+                <li>Implemented responsive UI components, admin panel features, media upload management, and REST APIs.</li>
+                <li>Optimized application performance, resolved production issues, and enhanced user experience through scalable backend solutions.</li>
+            </ul>
+        </div>
+
+        <!-- 2. CodeReviewAI -->
+        <div class="section-item">
+            <div class="project-header">
+                <div class="project-title">CodeReviewAI - AI-Powered Code Review Tool</div>
+                <div class="project-links">
+                    <a href="https://codereviewai-woad.vercel.app" target="_blank">Live Demo</a>
+                    <span>|</span>
+                    <a href="https://github.com/abhishekc2005/CodeReviewAI" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="tech-stack">React.js, Node.js, Express.js, Groq API (LLaMA), PrismJS, React Markdown, Vercel, Render</div>
+            <ul>
+                <li>Built an AI-powered full-stack code review tool that analyzes pasted code and delivers structured feedback covering code quality, potential bugs, performance improvements, security considerations, and best practices.</li>
+                <li>Integrated Groq API with LLaMA models on the Node.js/Express backend to simulate professional engineer-level code reviews with instant AI-generated responses.</li>
+                <li>Developed a responsive React frontend with PrismJS for syntax highlighting and React Markdown for formatted output; deployed frontend on Vercel and backend on Render.</li>
+            </ul>
+        </div>
+
+        <!-- 3. FundCup -->
+        <div class="section-item">
+            <div class="project-header">
+                <div class="project-title">FundCup - Crowdfunding Platform</div>
+                <div class="project-links">
+                    <a href="http://fundcup.vercel.app/" target="_blank">Live Demo</a>
+                    <span>|</span>
+                    <a href="https://github.com/abhishekc2005/FundCup" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="tech-stack">Next.js, NextAuth, Node.js, Tailwind CSS, MongoDB, Vercel</div>
+            <ul>
+                <li>Developed a functional crowdfunding platform for creators using Next.js with NextAuth GitHub OAuth authentication.</li>
+                <li>Built a personalized creator dashboard to showcase profiles and manage fundings with seamless responsive design.</li>
+                <li>Integrated MongoDB for secure data storage and Razorpay for payment processing.</li>
+            </ul>
+        </div>
+
+        <!-- 4. PassOp -->
+        <div class="section-item">
+            <div class="project-header">
+                <div class="project-title">PassOp - Password Manager</div>
+                <div class="project-links">
+                    <a href="http://pass-op-client.vercel.app/" target="_blank">Live Demo</a>
+                    <span>|</span>
+                    <a href="https://github.com/abhishekc2005/PassOp-Client" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="tech-stack">React.js, Express.js, Node.js, Tailwind CSS, MongoDB, Vercel</div>
+            <ul>
+                <li>Developed a full-stack MERN password manager enabling users to securely store, edit, delete and copy credentials.</li>
+                <li>Built responsive frontend using React (Vite) and Tailwind CSS with real-time feedback via React Toastify.</li>
+                <li>Designed RESTful APIs using Express.js and integrated MongoDB Atlas for persistent data storage.</li>
+            </ul>
+        </div>
+
+        <!-- 5. Avika Trading Company -->
+        <div class="section-item">
+            <div class="project-header">
+                <div class="project-title">Avika Trading Company - Business Website</div>
+                <div class="project-links">
+                    <a href="https://avikatradingcompany.vercel.app" target="_blank">Live Demo</a>
+                    <span>|</span>
+                    <a href="https://github.com/abhishekc2005/Avika-Trading-Company" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="tech-stack">React.js, TypeScript, Vite, Tailwind CSS, shadcn-ui, EmailJS, Vercel</div>
+            <ul>
+                <li>Built a professional, fully responsive business website for a premium natural honey brand, featuring a modern UI with Tailwind CSS and shadcn-ui components tailored for real-world client delivery.</li>
+                <li>Integrated EmailJS to implement a fully functional contact and bulk-order inquiry system, enabling direct customer communication without a backend server.</li>
+                <li>Developed using React with TypeScript and Vite for a type-safe, performant codebase; strengthened freelance client project and production deployment experience.</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Achievements</h2>
+        <div class="skills-list">
+            <p><strong>Certification:</strong> Scored 92% in NPTEL "Programming in Java" Course, Nov. 2025.</p>
+        </div>
+    </section>
+
+</body>
+</html>
