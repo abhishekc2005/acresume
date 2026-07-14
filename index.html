@@ -35,9 +35,16 @@
 
         .contact-info {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             font-size: 9.5px;
             margin-top: 2px;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .contact-left, .contact-right {
+            display: flex;
+            flex-direction: column;
             gap: 1px;
         }
 
@@ -190,29 +197,33 @@
     <header>
         <h1>Abhishek Choudhary</h1>
         <div class="contact-info">
-            <div class="contact-item">
-                <i class="fab fa-linkedin"></i>
-                <span><a href="https://www.linkedin.com/in/abhishek-choudhary-186a1a303" target="_blank">LinkedIn</a>: linkedin.com/in/abhishek-choudhary-186a1a303</span>
+            <div class="contact-left">
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span><a href="https://www.linkedin.com/in/abhishek-choudhary-186a1a303" target="_blank">LinkedIn</a>: linkedin.com/in/abhishek-choudhary-186a1a303</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span><a href="https://github.com/abhishekc2005" target="_blank">Github</a>: github.com/abhishekc2005</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-twitter"></i>
+                    <span><a href="https://x.com/abhishekc_108?t=wpS1Z9fe771OL6gZskcd8g&s=09" target="_blank">Twitter</a>: x.com/abhishekc_108</span>
+                </div>
             </div>
-            <div class="contact-item">
-                <i class="fab fa-github"></i>
-                <span><a href="https://github.com/abhishekc2005" target="_blank">Github</a>: github.com/abhishekc2005</span>
-            </div>
-            <div class="contact-item">
-                <i class="fab fa-twitter"></i>
-                <span><a href="https://x.com/abhishekc_108?t=wpS1Z9fe771OL6gZskcd8g&s=09" target="_blank">Twitter</a>: x.com/abhishekc_108</span>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-globe"></i>
-                <span><a href="https://acdevportfolio.vercel.app" target="_blank">Portfolio</a>: acdevportfolio.vercel.app</span>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span><a href="mailto:abhishekchoudharyorg@gmail.com">Email</a>: abhishekchoudharyorg@gmail.com</span>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>Mobile: +91-8770552411</span>
+            <div class="contact-right">
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <span><a href="https://acdevportfolio.vercel.app" target="_blank">Portfolio</a>: acdevportfolio.vercel.app</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span><a href="mailto:abhishekchoudharyorg@gmail.com">Email</a>: abhishekchoudharyorg@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>Mobile: +91-8770552411</span>
+                </div>
             </div>
         </div>
     </header>
