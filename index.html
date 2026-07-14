@@ -13,38 +13,31 @@
         }
         body {
             font-family: 'Times New Roman', Times, serif;
-            line-height: 1.25;
+            line-height: 1.22;
             color: #000;
             max-width: 900px;
             margin: 0 auto;
-            padding: 20px 35px;
+            padding: 16px 32px;
             background: #fff;
         }
 
         header {
             border-bottom: 2px solid #000;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
         }
 
         h1 {
-            font-size: 26px;
+            font-size: 25px;
             font-weight: bold;
             margin-bottom: 3px;
         }
 
         .contact-info {
             display: flex;
-            justify-content: space-between;
-            font-size: 9.5px;
-            margin-top: 3px;
-            flex-wrap: wrap;
-            gap: 4px;
-        }
-
-        .contact-left, .contact-right {
-            display: flex;
             flex-direction: column;
+            font-size: 9.5px;
+            margin-top: 2px;
             gap: 1px;
         }
 
@@ -55,7 +48,7 @@
         }
 
         .contact-item i {
-            width: 13px;
+            width: 12px;
             color: #333;
             font-size: 9px;
         }
@@ -73,29 +66,40 @@
             font-size: 12px;
             font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 1.3px;
-            margin-top: 10px;
-            margin-bottom: 5px;
+            letter-spacing: 1.2px;
+            margin-top: 8px;
+            margin-bottom: 4px;
             border-bottom: 1px solid #000;
             padding-bottom: 2px;
         }
 
         .summary {
             font-size: 9.5px;
-            line-height: 1.35;
-            margin-bottom: 4px;
+            line-height: 1.32;
+            margin-bottom: 2px;
             text-align: justify;
         }
 
         .section-item {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .job-header {
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
+            align-items: flex-start;
             margin-bottom: 1px;
+        }
+
+        .job-title-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .job-meta-group {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
         }
 
         .job-title {
@@ -111,28 +115,26 @@
         .job-role {
             font-style: italic;
             font-size: 9.5px;
-            margin-bottom: 2px;
         }
 
         .job-period {
             font-size: 9.5px;
-            text-align: right;
         }
 
         ul {
-            margin-left: 16px;
+            margin-left: 15px;
             font-size: 9.5px;
             margin-top: 1px;
         }
 
         ul li {
             margin-bottom: 0.5px;
-            line-height: 1.25;
+            line-height: 1.22;
         }
 
         .skills-list {
             font-size: 9.5px;
-            line-height: 1.3;
+            line-height: 1.28;
         }
 
         .skills-list p {
@@ -170,16 +172,16 @@
 
         @media print {
             body {
-                padding: 15px 25px;
+                padding: 12px 22px;
             }
 
             h2 {
-                margin-top: 8px;
-                margin-bottom: 4px;
+                margin-top: 6px;
+                margin-bottom: 3px;
             }
 
             .section-item {
-                margin-bottom: 6px;
+                margin-bottom: 5px;
             }
         }
     </style>
@@ -188,33 +190,29 @@
     <header>
         <h1>Abhishek Choudhary</h1>
         <div class="contact-info">
-            <div class="contact-left">
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <span><a href="https://www.linkedin.com/in/abhishek-choudhary-186a1a303" target="_blank">LinkedIn</a>: linkedin.com/in/abhishek-choudhary-186a1a303</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <span><a href="https://github.com/abhishekc2005" target="_blank">Github</a>: github.com/abhishekc2005</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-twitter"></i>
-                    <span><a href="https://x.com/abhishekc_108?t=wpS1Z9fe771OL6gZskcd8g&s=09" target="_blank">Twitter</a>: x.com/abhishekc_108</span>
-                </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <span><a href="https://www.linkedin.com/in/abhishek-choudhary-186a1a303" target="_blank">LinkedIn</a>: linkedin.com/in/abhishek-choudhary-186a1a303</span>
             </div>
-            <div class="contact-right">
-                <div class="contact-item">
-                    <i class="fas fa-globe"></i>
-                    <span><a href="https://acdevportfolio.vercel.app" target="_blank">Portfolio</a>: acdevportfolio.vercel.app</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span><a href="mailto:abhishekchoudharyorg@gmail.com">Email</a>: abhishekchoudharyorg@gmail.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>Mobile: +91-8770552411</span>
-                </div>
+            <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <span><a href="https://github.com/abhishekc2005" target="_blank">Github</a>: github.com/abhishekc2005</span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-twitter"></i>
+                <span><a href="https://x.com/abhishekc_108?t=wpS1Z9fe771OL6gZskcd8g&s=09" target="_blank">Twitter</a>: x.com/abhishekc_108</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-globe"></i>
+                <span><a href="https://acdevportfolio.vercel.app" target="_blank">Portfolio</a>: acdevportfolio.vercel.app</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span><a href="mailto:abhishekchoudharyorg@gmail.com">Email</a>: abhishekchoudharyorg@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>Mobile: +91-8770552411</span>
             </div>
         </div>
     </header>
@@ -227,11 +225,11 @@
         <h2>Education</h2>
         <div class="section-item">
             <div class="job-header">
-                <div>
+                <div class="job-title-group">
                     <div class="job-title">IES IPS Academy Indore (Affiliated to RGPV Bhopal)</div>
                     <div class="job-role">Bachelor of Technology - CSE (AI-ML) | CGPA: 7.6</div>
                 </div>
-                <div>
+                <div class="job-meta-group">
                     <div class="job-location">Indore, India</div>
                     <div class="job-period">Sept. 2023 - May 2027</div>
                 </div>
@@ -246,7 +244,7 @@
             <p><strong>Frameworks & Libraries:</strong> React.js, Node.js, Express.js, Next.js, Tailwind CSS, Bootstrap, PrismJS</p>
             <p><strong>Databases:</strong> MySQL, MongoDB, PostgreSQL, Redis</p>
             <p><strong>Tools & IDEs:</strong> VSCode, IntelliJ IDEA, GIT, GitHub, Postman, Vite, Prisma ORM, Docker</p>
-            <p><strong>Cloud & Platforms:</strong> AWS (EC2, S3, ECS), Vercel, Render, MongoDB Atlas, Firebase, Cloudinary, EmailJS</p>
+            <p><strong>Cloud & Platforms:</strong> AWS (EC2, S3, ECS), Vercel, Render, MongoDB Atlas, Firebase, Cloudinary</p>
             <p><strong>AI & APIs:</strong> Groq API (LLaMA models)</p>
         </div>
     </section>
@@ -255,11 +253,15 @@
         <h2>Work Experience</h2>
         <div class="section-item">
             <div class="job-header">
-                <div class="job-title">Appzeto</div>
-                <div class="job-location">Remote</div>
-                <div class="job-period">May 2026 - Present</div>
+                <div class="job-title-group">
+                    <div class="job-title">Appzeto</div>
+                    <div class="job-role">Full Stack Development Intern</div>
+                </div>
+                <div class="job-meta-group">
+                    <div class="job-location">Indore, India</div>
+                    <div class="job-period">May 2026 - Present</div>
+                </div>
             </div>
-            <div class="job-role">Full Stack Development Intern</div>
             <ul>
                 <li>Learned and implemented full stack development in MERN Stack and Next.js.</li>
                 <li>Developed and contributed to multiple projects with focus on scalability and performance.</li>
@@ -268,11 +270,15 @@
         </div>
         <div class="section-item">
             <div class="job-header">
-                <div class="job-title">Prabisha Consulting</div>
-                <div class="job-location">United Kingdom (Remote)</div>
-                <div class="job-period">Jan. 2026 - Apr. 2026</div>
+                <div class="job-title-group">
+                    <div class="job-title">Prabisha Consulting</div>
+                    <div class="job-role">Full Stack Development Intern</div>
+                </div>
+                <div class="job-meta-group">
+                    <div class="job-location">United Kingdom (Remote)</div>
+                    <div class="job-period">Jan. 2026 - Apr. 2026</div>
+                </div>
             </div>
-            <div class="job-role">Full Stack Development Intern</div>
             <ul>
                 <li>Worked on full stack development using Next.js, SQL, and Prisma ORM.</li>
                 <li>Built and deployed GlobalIndiansInfo, a platform for NRIs, PIOs, and the global Indian community.</li>
@@ -294,11 +300,9 @@
                     <a href="https://github.com/payalsisodiya55/itzo" target="_blank">GitHub</a>
                 </div>
             </div>
-            <div class="tech-stack">React.js, Node.js, Express.js, MongoDB, AWS ECS</div>
+            <div class="tech-stack">React.js, Node.js, Express.js, MongoDB, Redis, Firebase, Cloudinary</div>
             <ul>
-                <li>Developed and maintained a full-stack food ordering platform using React.js, Node.js, Express.js, MongoDB, and AWS ECS.</li>
-                <li>Implemented responsive UI components, admin panel features, media upload management, and REST APIs.</li>
-                <li>Optimized application performance, resolved production issues, and enhanced user experience through scalable backend solutions.</li>
+                <li>ItzoFood – A full-stack MERN application featuring Food Delivery, Quick Commerce, and an enterprise HRMS.</li>
             </ul>
         </div>
 
