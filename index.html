@@ -1,302 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Choudhary - Resume</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            line-height: 1.22;
-            color: #000;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 16px 32px;
-            background: #fff;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Choudhary - Full Stack Developer (MERN) Resume</title>
+<meta name="description" content="Abhishek Choudhary - Full Stack Developer | MERN Stack">
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #fff; }
+  body {
+    font-family: Arial, Helvetica, 'Liberation Sans', sans-serif;
+    font-size: 9.9pt;
+    line-height: 1.34;
+    color: #000;
+    width: 210mm;
+    height: 296.5mm;
+    margin: 0 auto;
+    padding: 11mm 15mm 10mm 15mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 7px;
+  }
+  a { color: #000; text-decoration: none; }
 
-        header {
-            text-align: center;
-            border-bottom: 2px solid #000;
-            padding-bottom: 5px;
-            margin-bottom: 8px;
-        }
+  header { text-align: center; padding-bottom: 7px; border-bottom: 2px solid #000; }
+  h1 { font-size: 26pt; letter-spacing: 1.4px; font-weight: 700; line-height: 1.1; }
+  .headline { font-size: 12pt; font-weight: 700; margin-top: 4px; }
+  .contact { font-size: 10pt; margin-top: 4px; }
+  .sep { padding: 0 6px; }
 
-        h1 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 2px;
-            letter-spacing: 0.5px;
-        }
-
-        .headline {
-            font-size: 11px;
-            color: #0066cc;
-            margin-bottom: 3px;
-        }
-
-        .contact-line {
-            font-size: 9.5px;
-            margin-top: 1px;
-        }
-
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        h2 {
-            font-size: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            margin-top: 8px;
-            margin-bottom: 4px;
-            border-bottom: 1px solid #000;
-            padding-bottom: 2px;
-        }
-
-        .summary {
-            font-size: 9.5px;
-            line-height: 1.32;
-            margin-bottom: 2px;
-            text-align: justify;
-        }
-
-        .section-item {
-            margin-bottom: 6px;
-        }
-
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 1px;
-        }
-
-        .job-title-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .job-meta-group {
-            display: flex;
-            flex-direction: column;
-            text-align: right;
-        }
-
-        .job-title {
-            font-weight: bold;
-            font-size: 10.5px;
-        }
-
-        .job-location {
-            font-size: 9.5px;
-            font-style: italic;
-        }
-
-        .job-role {
-            font-style: italic;
-            font-size: 9.5px;
-        }
-
-        .job-period {
-            font-size: 9.5px;
-        }
-
-        ul {
-            margin-left: 15px;
-            font-size: 9.5px;
-            margin-top: 1px;
-        }
-
-        ul li {
-            margin-bottom: 0.5px;
-            line-height: 1.22;
-        }
-
-        .skills-list {
-            font-size: 9.5px;
-            line-height: 1.28;
-        }
-
-        .skills-list p {
-            margin-bottom: 1px;
-        }
-
-        strong {
-            font-weight: bold;
-        }
-
-        .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 1px;
-        }
-
-        .project-title {
-            font-weight: bold;
-            font-size: 10.5px;
-        }
-
-        .project-links {
-            display: flex;
-            gap: 8px;
-            font-size: 9.5px;
-            font-style: italic;
-        }
-
-        .tech-stack {
-            font-style: italic;
-            font-size: 9.5px;
-            margin-bottom: 1px;
-        }
-
-        @media print {
-            body {
-                padding: 12px 22px;
-            }
-
-            h2 {
-                margin-top: 6px;
-                margin-bottom: 3px;
-            }
-
-            .section-item {
-                margin-bottom: 5px;
-            }
-        }
-    </style>
+  h2 {
+    font-size: 11.5pt; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 1.4px; border-bottom: 1px solid #000;
+    padding-bottom: 2px; margin-bottom: 6px;
+  }
+  .row { display: flex; justify-content: space-between; align-items: baseline; }
+  .title { font-weight: 700; font-size: 11.2pt; }
+  .sub { font-style: italic; }
+  .date { font-size: 10.4pt; white-space: nowrap; }
+  ul { margin: 3px 0 0 17px; }
+  li { margin-bottom: 3px; text-align: left; }
+  .entry { margin-bottom: 9px; }
+  .entry:last-child { margin-bottom: 0; }
+  .skills p { margin-bottom: 4px; }
+  .tech { font-style: italic; margin: 1px 0 1px 0; }
+</style>
 </head>
 <body>
-    <header>
-        <h1>ABHISHEK CHOUDHARY</h1>
-        <div class="headline">Full Stack Developer | MERN Stack</div>
-        <div class="contact-line">
-            <a href="mailto:abhishekchoudharyorg@gmail.com">abhishekchoudharyorg@gmail.com</a>
-            &nbsp;&bull;&nbsp; +91-8770552411
-        </div>
-        <div class="contact-line">
-            <a href="https://www.linkedin.com/in/abhishek-choudhary-186a1a303" target="_blank">linkedin.com/in/abhishek-choudhary-186a1a303</a>
-            &nbsp;&bull;&nbsp;
-            <a href="https://github.com/abhishekc2005" target="_blank">github.com/abhishekc2005</a>
-            &nbsp;&bull;&nbsp;
-            <a href="https://acdevportfolio.vercel.app" target="_blank">acdevportfolio.vercel.app</a>
-            &nbsp;&bull;&nbsp;
-            <a href="https://x.com/abhishekc_108?t=wpS1Z9fe771OL6gZskcd8g&s=09" target="_blank">x.com/abhishekc_108</a>
-        </div>
-    </header>
 
-    <section>
-        <h2>Profile Summary</h2>
-        <p class="summary">Final-year B.Tech (CSE-AI/ML) student at IPS Academy, Indore, with 6 months of professional experience as a Full Stack Developer at Appzeto. Proficient in React.js, Next.js, TypeScript, JavaScript, Node.js, Express.js, MongoDB, and Java, with strong expertise in the MERN Stack and building scalable, production-grade web applications. Experienced in end-to-end development and deployment of live projects, collaborating effectively in professional development environments, and delivering high-quality, maintainable software solutions. Passionate about continuously learning modern technologies and building impactful real-world products.</p>
-    </section>
+<header>
+  <h1>ABHISHEK CHOUDHARY</h1>
+  <div class="headline">Full Stack Developer | MERN Stack</div>
+  <div class="contact">
+    <a href="mailto:abhishekchoudharyorg@gmail.com">abhishekchoudharyorg@gmail.com</a><span class="sep">|</span>+91-8770552411<span class="sep">|</span>Indore, India
+  </div>
+  <div class="contact">
+    <a href="https://www.linkedin.com/in/abhishek-choudhary-186a1a303">linkedin.com/in/abhishek-choudhary-186a1a303</a><span class="sep">|</span><a href="https://github.com/abhishekc2005">github.com/abhishekc2005</a><span class="sep">|</span><a href="https://acdevportfolio.vercel.app">acdevportfolio.vercel.app</a>
+  </div>
+</header>
 
-    <section>
-        <h2>Education</h2>
-        <div class="section-item">
-            <div class="job-header">
-                <div class="job-title-group">
-                    <div class="job-title">IES IPS Academy Indore (Affiliated to RGPV Bhopal)</div>
-                    <div class="job-role">Bachelor of Technology - CSE (AI-ML) | CGPA: 7.6</div>
-                </div>
-                <div class="job-meta-group">
-                    <div class="job-location">Indore, India</div>
-                    <div class="job-period">Sept. 2023 - May 2027</div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section>
+  <h2>Professional Summary</h2>
+  <p>Full Stack Developer with 6 months of professional experience at Appzeto, specializing in the MERN Stack (MongoDB, Express.js, React.js, Node.js), Next.js, and TypeScript. Proven track record of designing, developing, and deploying scalable, production-grade web applications with RESTful APIs, cloud deployment, and AI/LLM integration. Final-year B.Tech (CSE &ndash; AI/ML) student with strong fundamentals in Java and software engineering best practices.</p>
+</section>
 
-    <section>
-        <h2>Technical Skills</h2>
-        <div class="skills-list">
-            <p><strong>Languages:</strong> Java, JavaScript, TypeScript, HTML, CSS</p>
-            <p><strong>Frameworks & Libraries:</strong> React.js, Node.js, Express.js, Next.js, Tailwind CSS</p>
-            <p><strong>Databases:</strong> MySQL, MongoDB, Redis</p>
-            <p><strong>Tools & IDEs:</strong> VSCode, IntelliJ IDEA, GIT, GitHub, Postman, Vite, Prisma ORM, Docker</p>
-            <p><strong>Cloud & Platforms:</strong> AWS (EC2, S3), Vercel, Render, MongoDB Atlas, Firebase, Cloudinary</p>
-            <p><strong>AI & APIs:</strong> Groq API (LLaMA models)</p>
-        </div>
-    </section>
+<section class="skills">
+  <h2>Technical Skills</h2>
+  <p><strong>Languages:</strong> JavaScript (ES6+), TypeScript, Java, HTML5, CSS3</p>
+  <p><strong>Frontend:</strong> React.js, Next.js, Tailwind CSS, Vite, Responsive Web Design</p>
+  <p><strong>Backend:</strong> Node.js, Express.js, RESTful APIs</p>
+  <p><strong>Databases:</strong> MongoDB, MySQL, Redis</p>
+  <p><strong>Cloud &amp; DevOps:</strong> AWS (EC2, S3), Docker, Vercel, Render, MongoDB Atlas, Firebase, Cloudinary</p>
+  <p><strong>AI &amp; Tools:</strong> Groq API (LLaMA), AI-Native / AI-Assisted Development, Git, GitHub, Postman, VS Code, IntelliJ IDEA</p>
+</section>
 
-    <section>
-        <h2>Work Experience</h2>
-        <div class="section-item">
-            <div class="job-header">
-                <div class="job-title-group">
-                    <div class="job-title">Appzeto</div>
-                    <div class="job-role">Full Stack Developer</div>
-                </div>
-                <div class="job-meta-group">
-                    <div class="job-location">Indore, India</div>
-                    <div class="job-period">Feb 2026 - Aug 2026</div>
-                </div>
-            </div>
-            <ul>
-                <li>Built and implemented full stack web applications using the MERN Stack in a live production environment.</li>
-                <li>Developed and contributed to multiple projects with a focus on scalability, performance, and maintainability.</li>
-                <li>Collaborated with cross-functional teams on deployment using modern full stack technologies and cloud platforms.</li>
-            </ul>
-        </div>
-    </section>
+<section>
+  <h2>Work Experience</h2>
+  <div class="entry">
+    <div class="row"><span class="title">Full Stack Developer &ndash; Appzeto</span><span class="date">Feb 2026 &ndash; Aug 2026</span></div>
+    <div class="row"><span class="sub">MERN Stack Development</span><span class="date sub">Indore, India</span></div>
+    <ul>
+      <li>Designed, developed, and deployed full-stack web applications using the MERN Stack in a live production environment.</li>
+      <li>Delivered multiple client-facing projects with a strong focus on scalability, performance optimization, and maintainable code.</li>
+      <li>Collaborated with cross-functional teams to ship features and manage deployments on modern cloud platforms.</li>
+    </ul>
+  </div>
+</section>
 
-    <section>
-        <h2>Projects</h2>
+<section>
+  <h2>Projects</h2>
 
-        <!-- 1. ItzoFood -->
-        <div class="section-item">
-            <div class="project-header">
-                <div class="project-title">ItzoFood – Food Delivery, Quick Commerce & HRMS/EMS Platform</div>
-                <div class="project-links">
-                    <a href="https://itzofood.com" target="_blank">Live Demo</a>
-                    <span>|</span>
-                    <a href="https://github.com/payalsisodiya55/itzo" target="_blank">GitHub</a>
-                </div>
-            </div>
-            <div class="tech-stack">React.js, Node.js, Express.js, MongoDB, Redis, Firebase, Cloudinary</div>
-            <ul>
-                <li>Built a full-stack MERN application combining Food Delivery, Quick Commerce, and an enterprise HRMS/EMS (workforce management) system.</li>
-                <li>Designed a unified, scalable architecture serving three distinct product lines under a single platform.</li>
-            </ul>
-        </div>
+  <div class="entry">
+    <div class="row"><span class="title">CodeReviewAI &ndash; AI-Powered Code Review Platform</span><span class="date sub">Personal Project</span></div>
+    <div class="tech">React.js, Node.js, Express.js, Groq API (LLaMA), PrismJS, Vercel, Render</div>
+    <ul>
+      <li>Built a full-stack AI-powered code review platform that analyzes source code and generates structured feedback on code quality, bugs, performance, security, maintainability, and best practices.</li>
+      <li>Integrated Groq API with LLaMA-based LLMs through a Node.js/Express.js REST API, using prompt engineering to automate contextual code analysis and generate actionable developer feedback.</li>
+      <li>Developed a responsive React.js interface with PrismJS syntax highlighting and deployed the application on Vercel (frontend) and Render (backend) for an end-to-end cloud-based workflow.</li>
+    </ul>
+  </div>
 
-        <!-- 2. K9 Bharat -->
-        <div class="section-item">
-            <div class="project-header">
-                <div class="project-title">K9 Bharat – Food Delivery & Taxi Booking Platform</div>
-                <div class="project-links">
-                    <a href="https://k9bharat.com" target="_blank">Live Demo</a>
-                    <span>|</span>
-                    <a href="https://github.com/abhishekc2005/k9rides" target="_blank">GitHub</a>
-                </div>
-            </div>
-            <div class="tech-stack">React.js, Node.js, Express.js, MongoDB, Redis, Firebase, Cloudinary</div>
-            <ul>
-                <li>Developed a full-stack multi-service platform combining food ordering and taxi booking with authentication and role-based dashboards.</li>
-                <li>Built REST APIs and real-time features to support live order and ride tracking across services.</li>
-                <li>Implemented media management with Cloudinary and location-based services for accurate delivery and pickup routing.</li>
-            </ul>
-        </div>
+  <div class="entry">
+    <div class="row"><span class="title">ItzoFood &ndash; Food Delivery, Quick Commerce &amp; HRMS/EMS Platform</span><span class="date sub">Live Project | Appzeto</span></div>
+    <div class="tech">React.js, Node.js, Express.js, MongoDB, Redis, Firebase, Cloudinary</div>
+    <ul>
+      <li>Built a full-stack MERN application combining Food Delivery, Quick Commerce, and an enterprise HRMS/EMS (workforce management) system in a live production environment.</li>
+      <li>Designed a unified, scalable architecture serving three distinct product lines under a single platform.</li>
+      <li>Integrated Redis, Firebase, and Cloudinary for performance, backend services, and media management.</li>
+      <li>Used AI-assisted and AI-native development tools to enhance productivity and accelerate development cycles.</li>
+    </ul>
+  </div>
+</section>
 
-    </section>
+<section>
+  <h2>Education</h2>
+  <div class="row"><span class="title">B.Tech &ndash; Computer Science &amp; Engineering (AI/ML)</span><span class="date">Sept 2023 &ndash; May 2027</span></div>
+  <div class="row"><span class="sub">IES IPS Academy, Indore (Affiliated to RGPV Bhopal)</span><span class="date">CGPA: 7.6</span></div>
+</section>
 
-    <section>
-        <h2>Achievements</h2>
-        <div class="skills-list">
-            <p><strong>Certification:</strong> Scored 92% in NPTEL "Programming in Java" Course, Nov. 2025.</p>
-        </div>
-    </section>
+<section>
+  <h2>Certifications &amp; Achievements</h2>
+  <ul>
+    <li>NPTEL &ndash; Programming in Java: scored 92% (Nov 2025)</li>
+  </ul>
+</section>
 
 </body>
 </html>
